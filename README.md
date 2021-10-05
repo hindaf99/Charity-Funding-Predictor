@@ -25,7 +25,7 @@ The model's predictive accuracy was under 72%, which means I was not able to ach
 	  
    ### In order to increase the model performance, I considered the following steps: 
    
-   - I removed 'STATUS' and 'ASK_AMT'
+   - I removed 'STATUS' and 'ASK_AMT'columns
    - I added a third hidden layer with 10 neurons and I chose Relu as activation function 
    - I changed the number of neurons( 80 for layer 1 and 30 for layer 2)
 	  
