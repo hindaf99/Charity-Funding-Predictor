@@ -8,21 +8,23 @@ For this I will create a neural network by using Data Manipulation, creating tra
 ## Results
    ### Data Processing
   
-      - Target Variable: IS_SUCCESSFUL
-      - Feature Variables: APPLICATION_TYPE, AFFILIATION, CLASSIFICATION, USE_CASE, ORGANIZATION, STATUS, INCOME_AMT, SPECIAL_CONSIDERATIONS, ASK_AMT
-      - To clean the data I removed the EIN and NAME columns since they have no value to the model.
+         - Target Variable: IS_SUCCESSFUL
+         - Feature Variables: APPLICATION_TYPE, AFFILIATION, CLASSIFICATION, USE_CASE, ORGANIZATION, STATUS, INCOME_AMT, SPECIAL_CONSIDERATIONS, ASK_AMT
+         - To clean the data I removed the EIN and NAME columns since they have no value to the model.
  
-** **Compiling, Training, and Evaluating the Model Attempt #1
-    - 2 Hidden Layers
-    - 83 neurons (Layer1), 26 neurons(Layer2)
-    - I Used Relu and Sigmoid Activations Functions since sigmoid is best for binary classifcation problems as this and relu is for nonlinear datasets.
+** ** Compiling, Training, and Evaluating the Model Attempt #1
+       - 2 Hidden Layers
+       
+       - 83 neurons (Layer1), 26 neurons(Layer2)
+       
+       - I Used Relu and Sigmoid Activations Functions since sigmoid is best for binary classifcation problems as this and relu is for nonlinear datasets.
 		 
 
-     ![image](https://user-images.githubusercontent.com/83431185/135941372-0c00e0f6-8881-48fb-9d56-0dc46d49717f.png)
+   ![image](https://user-images.githubusercontent.com/83431185/135941372-0c00e0f6-8881-48fb-9d56-0dc46d49717f.png)
 
      The model's predictive accuracy was under 72%, which means I was not able to achieve the target model performance.
 	  
-** **In order to increase the model performance, I considered the following steps: 
+** ** In order to increase the model performance, I considered the following steps: 
      - I removed 'STATUS' and 'ASK_AMT'
      - I added a third hidden layer with 10 neurons and I chose Relu as activation function 
      - I changed the number of neurons( 80 for layer 1 and 30 for layer 2)
@@ -30,7 +32,7 @@ For this I will create a neural network by using Data Manipulation, creating tra
 	   
 The model's accuracy recording:
 
-    ![image](https://user-images.githubusercontent.com/83431185/135941296-c1d48deb-a2c7-403c-93ba-054685c23efa.png)
+  ![image](https://user-images.githubusercontent.com/83431185/135941296-c1d48deb-a2c7-403c-93ba-054685c23efa.png)
 
 	  
 ## Summary 
